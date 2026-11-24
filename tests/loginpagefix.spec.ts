@@ -3,7 +3,7 @@ import {test, expect} from '../src/fixtures/pagefixtures';
 import * as allure from "allure-js-commons";
 
 
-import {meta, log} from 'reporting-Labs';
+import {meta, log} from 'reporting-labs';
 import { BasePage } from '../src/pages/BasePage';
 
 test.beforeEach(async ({ loginPage, page }) => {

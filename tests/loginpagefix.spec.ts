@@ -9,6 +9,7 @@ import { BasePage } from '../src/pages/BasePage';
 test.beforeEach(async ({ loginPage, page }) => {
    
     await loginPage.goToLoginPage();
+    await loginPage.doLogin(process.env.USERNAME!, process.env.PASSWORD!);
 })
 
 test('Login Page Title Test', async ({loginPage}) => {

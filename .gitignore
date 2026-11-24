@@ -17,6 +17,7 @@ node_modules/
 # env files (confidientials)
 
 config/.env.*
+!config/.env.example
 
 #build
 dist/

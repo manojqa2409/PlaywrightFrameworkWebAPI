@@ -30,7 +30,7 @@ async function createUser(apiHelper: ApiHelper) {
 //Test:1 Create User test + Verify :AAA
 // POST ---> userID --> GET/userId --> Verify
 
-test('Create a user', async ({ apiHelper }) => {
+test('@regression Create a user', async ({ apiHelper }) => {
     //  create a fresh user
     let userResponse = await createUser(apiHelper);
 
@@ -44,7 +44,7 @@ test('Create a user', async ({ apiHelper }) => {
 // Test:2 Update the User + Verify : AAA
 // POST ---> userID --> GET/userId --> PUT /userid  --> GET /userid  --> Verify
 
-test('Update a user', async ({ apiHelper }) => {
+test('@regression Update a user', async ({ apiHelper }) => {
     // 1. create a fresh user
     let userResponse = await createUser(apiHelper);
 
@@ -78,7 +78,7 @@ test('Update a user', async ({ apiHelper }) => {
 // Test:3 Delete the User + Verify : AAA
 // POST ---> userID --> GET/userId --> Delete /userid (204)  --> GET /userid (404)  --> Verify
 
-test('Delete a user', async ({ apiHelper }) => {
+test('@regression Delete a user', async ({ apiHelper }) => {
     // 1. create a fresh user
     let userResponse = await createUser(apiHelper);
 

@@ -16,7 +16,7 @@ let userId: number;
 test.describe.serial('running e2e go rest CRUD apis test', () => {
     //GET Test:
 
-    test('GET API- get all the user', async ({ apiHelper }) => {
+    test('@smoke @regression GET API- get all the user', async ({ apiHelper }) => {
         let response = await apiHelper.get('/public/v2/users', AUTH_HEADER);
         expect(response.status).toBe(200);
         expect(response.body.length).toBeGreaterThan(0);
@@ -24,7 +24,7 @@ test.describe.serial('running e2e go rest CRUD apis test', () => {
 
     //POST Test:
 
-    test('POST API- create the user', async ({ apiHelper }) => {
+    test('@regression POST API- create the user', async ({ apiHelper }) => {
         let userData = {
             name: 'manoj',
             email: `manoj${Date.now()}@gmail.com`, //unique email, GoRest rejects duplicates with 422
@@ -42,7 +42,7 @@ test.describe.serial('running e2e go rest CRUD apis test', () => {
 
     // PUT Test:
 
-    test('PUT API- create the user', async ({ apiHelper }) => {
+    test('@regression PUT API- create the user', async ({ apiHelper }) => {
         let userData = {
             name: 'manoj kumar',
             email: `manoj${Date.now()}@gmail.com`, //unique email, GoRest rejects duplicates with 422
@@ -60,7 +60,7 @@ test.describe.serial('running e2e go rest CRUD apis test', () => {
 
     //DELETE Test:
 
-    test('Delete API- create the user', async ({ apiHelper }) => {
+    test('@regression Delete API- create the user', async ({ apiHelper }) => {
 
         let response = await apiHelper.delete(`/public/v2/users/${userId}`, AUTH_HEADER);
 

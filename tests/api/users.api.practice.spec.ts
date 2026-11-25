@@ -4,7 +4,7 @@ let AUTH_TOKEN = {
     Authorization: 'Bearer 01ad724299acaf02eb9829dfaa7fc0ab5530b5ce24899ca3d2cadd42c8eed444'
 };
 
-test('get all users api test', async ({ request }) => {
+test.skip('get all users api test', async ({ request }) => {
 
     let response = await request.get('https://gorest.co.in/public/v2/users', {
         headers: AUTH_TOKEN
@@ -20,7 +20,7 @@ test('get all users api test', async ({ request }) => {
 
 })
 
-test('create users api test-POST', async ({ request }) => {
+test.skip('create users api test-POST', async ({ request }) => {
 
     //user JS Object
 

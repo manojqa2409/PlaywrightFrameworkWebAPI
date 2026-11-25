@@ -31,7 +31,7 @@ test.beforeEach('POST - generate the access token', async ({ request }) => {
 
 })
 
-test('GET - Albums data test', async ({ request }) => {
+test('@regression GET - Albums data test', async ({ request }) => {
     //https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy
 
     let baseURL = 'https://api.spotify.com';

@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 // **/*  --> wildcrds pattern for URLs
 
 
-test('intercept the url and log the request', async ({ page }) => {
+test('@smoke intercept the url and log the request', async ({ page }) => {
 
     // below are the listners
 
@@ -23,7 +23,7 @@ test('intercept the url and log the request', async ({ page }) => {
 // intercept with mocking:
 // mocking:facke data/ response:
 
-test('mock search data api', async ({ page }) => {
+test('@smoke mock search data api', async ({ page }) => {
 
     let fakedata = [
         { name: 'Fake Macbook Pro', price: '$679' },
@@ -49,7 +49,7 @@ test('mock search data api', async ({ page }) => {
 
 })
 
-test('mock HTML data', async ({ page }) => {
+test('@smoke mock HTML data', async ({ page }) => {
 
     let fakedata = [
         { name: 'Fake Macbook Pro', price: '$679' },

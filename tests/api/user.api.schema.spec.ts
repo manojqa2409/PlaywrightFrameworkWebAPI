@@ -57,7 +57,7 @@ let userArraySchema = {
 
 
 
-test('get a user  - schema test', async ({ apiHelper }) => {
+test('@smoke get a user  - schema test', async ({ apiHelper }) => {
     let userData = {
         name: 'manoj',
         email: `manoj${Date.now()}@gmail.com`, //unique email, GoRest rejects duplicates with 422
@@ -87,7 +87,7 @@ test('get a user  - schema test', async ({ apiHelper }) => {
     expect(isSchemaValid).toBeTruthy();
 })
 
-test('get all user schema  - schema test', async ({ apiHelper }) => {
+test('@smoke get all user schema  - schema test', async ({ apiHelper }) => {
     // let userData = {
     //     name: 'manoj',
     //     email: `manoj${Date.now()}@gmail.com`, //unique email, GoRest rejects duplicates with 422

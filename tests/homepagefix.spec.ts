@@ -20,7 +20,7 @@ test('@smoke logout link exist test', async ({ homePage }) => {
 test('@regression home page headers exist test', async ({ homePage }) => {
     let allHeaders = await homePage.getHomePageHeaders();
     console.log('home page headers: ', allHeaders);
-    expect.soft(allHeaders).toHaveLength(4);
+    expect.soft(allHeaders).toHaveLength(2);
     expect.soft(allHeaders).toEqual([
         'My Account',
         'My Orders',

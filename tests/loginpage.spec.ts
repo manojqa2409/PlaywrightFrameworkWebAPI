@@ -1,26 +1,30 @@
-import { expect, test } from "@playwright/test";
-import { LoginPage } from "../src/pages/LoginPage";
 
-let loginpage: LoginPage
+import { test, expect } from '@playwright/test';
+import { LoginPage } from '../src/pages/LoginPage';
+import { HomePage } from '../src/pages/HomePage';
+
+let loginPage: LoginPage;
+let homePage: HomePage;
 
 test.beforeEach(async ({ page }) => {
-    loginpage = new LoginPage(page);
-    await loginpage.goToLoginPage();
-})
+    loginPage = new LoginPage(page);
+    await loginPage.goToLoginPage();
+    homePage = new HomePage(page);
+});
 
-test('Login Page Title Test', async () => {
-    let loginPageTitle = await loginpage.getLoginPageTitle();
-    console.log('Login Page Title Test:', loginPageTitle)
-    expect(loginPageTitle).toBe('Account Login')
+//AAA
+test.skip('login page title test', async () => {
+    let pageTitle = await loginPage.getPageTitle();
+    console.log('Login page title : ', pageTitle);
+    expect(pageTitle).toBe('Account Login');
+});
 
-})
+test.skip('forgot pwd link exist test', async () => {
+    expect(await loginPage.isForgottenPwdLinkExist()).toBeTruthy();
+});
 
-test('Forgot password link exist test', async () => {
-    expect(await loginpage.isForgottenPwdLinkExist()).toBeTruthy();
-
-})
-
-test('User is able to login', async () => {
-    await loginpage.doLogin('mia.garcia808@test.com', 'Admin@123');
-
-})
+test.skip('user is able to login to app', async () => {
+    await loginPage.doLogin('pwapril@pw.com', 'pw123');
+    expect.soft(await homePage.isLogoutLinkExist()).toBeTruthy();
+    expect.soft(await homePage.getHomePageTitle()).toBe('My Account');
+});

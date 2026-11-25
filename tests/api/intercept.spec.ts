@@ -45,7 +45,7 @@ test('@smoke mock search data api', async ({ page }) => {
     // Navigate to web app
 
     await page.goto('https://manoj.com/index.php?route=product/search&search=macbook')
-    await page.pause()
+    // await page.pause()
 
 })
 
@@ -86,6 +86,6 @@ test('@smoke mock HTML data', async ({ page }) => {
     // Navigate to web app
 
     await page.goto('https://manoj.com/index.php?route=product/search&search=macbook')
-    await page.pause()
+    // await page.pause()
 
 })

@@ -17,7 +17,9 @@ test('logout link exist test', async ({ homePage }) => {
     expect(await homePage.isLogoutLinkExist()).toBeTruthy();
 });
 
-test('@regression home page headers exist test', async ({ homePage }) => {
+test('@regression home page headers exist test', async ({ homePage, page }) => {
+    // wait until login has landed on the My Account page before reading headers
+    await page.waitForURL(/route=account\/account/, { timeout: 10000 });
     let allHeaders = await homePage.getHomePageHeaders();
     console.log('home page headers: ', allHeaders);
     expect.soft(allHeaders).toHaveLength(4);

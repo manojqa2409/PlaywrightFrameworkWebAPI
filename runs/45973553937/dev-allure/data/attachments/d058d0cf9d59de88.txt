@@ -1,0 +1,75 @@
+URL: https://gorest.co.in/public/v2/users
+Status: 200 Response: [
+  {
+    id: 8723326,
+    name: 'manoj',
+    email: 'manoj1795771557630@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723324,
+    name: 'manoj',
+    email: 'manoj1795768562063@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723322,
+    name: 'apiautomation-update',
+    email: 'apiautomation_1795768560084@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8723321,
+    name: 'apiautomation',
+    email: 'apiautomation_1795768559923@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723319,
+    name: 'manoj',
+    email: 'manoj1795768417076@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723317,
+    name: 'manoj',
+    email: 'manoj1795768304615@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723315,
+    name: 'apiautomation-update',
+    email: 'apiautomation_1795768302774@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8723314,
+    name: 'apiautomation',
+    email: 'apiautomation_1795768302290@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723310,
+    name: 'manoj',
+    email: 'manoj1795766949306@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723308,
+    name: 'apiautomation-update',
+    email: 'apiautomation_1795766947747@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  }
+]
+Content-Type: application/json; charset=utf-8
+Response Body: [{"id":8723326,"name":"manoj","email":"manoj1795771557630@gmail.com","gender":"male","status":"active"},{"id":8723324,"name":"manoj","email":"manoj1795768562063@gmail.com","gender":"male","status":"active"},{"id":8723322,"name":"apiautomation-update","email":"apiautomation_1795768560084@gmail.com","gender":"male","status":"inactive"},{"id":8723321,"name":"apiautomation","email":"apiautomation_1795768559923@gmail.com","gender":"male","status":"active"},{"id":8723319,"name":"manoj","email":"manoj1

@@ -1,0 +1,75 @@
+URL: https://gorest.co.in/public/v2/users
+Status: 200 Response: [
+  {
+    id: 8723317,
+    name: 'manoj',
+    email: 'manoj1795768304615@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723315,
+    name: 'apiautomation-update',
+    email: 'apiautomation_1795768302774@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8723314,
+    name: 'apiautomation',
+    email: 'apiautomation_1795768302290@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723310,
+    name: 'manoj',
+    email: 'manoj1795766949306@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723308,
+    name: 'apiautomation-update',
+    email: 'apiautomation_1795766947747@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8723307,
+    name: 'apiautomation',
+    email: 'apiautomation_1795766947208@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723303,
+    name: 'manoj',
+    email: 'manoj1795765795980@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8723281,
+    name: 'manoj',
+    email: 'manoj1795764975708@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8722531,
+    name: 'apiautomation-update',
+    email: 'apiautomation_1795681006602@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8722530,
+    name: 'apiautomation',
+    email: 'apiautomation_1795681006332@gmail.com',
+    gender: 'male',
+    status: 'active'
+  }
+]
+Content-Type: application/json; charset=utf-8
+Response Body: [{"id":8723317,"name":"manoj","email":"manoj1795768304615@gmail.com","gender":"male","status":"active"},{"id":8723315,"name":"apiautomation-update","email":"apiautomation_1795768302774@gmail.com","gender":"male","status":"inactive"},{"id":8723314,"name":"apiautomation","email":"apiautomation_1795768302290@gmail.com","gender":"male","status":"active"},{"id":8723310,"name":"manoj","email":"manoj1795766949306@gmail.com","gender":"male","status":"active"},{"id":8723308,"name":"apiautomation-update",

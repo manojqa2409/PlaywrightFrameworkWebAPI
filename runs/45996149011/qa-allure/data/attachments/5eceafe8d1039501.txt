@@ -1,0 +1,20 @@
+URL: https://gorest.co.in/public/v2/users/8723415
+Status: 200 Response: {
+  id: 8723415,
+  name: 'apiautomation',
+  email: 'apiautomation_1795781427749@gmail.com',
+  gender: 'male',
+  status: 'active'
+}
+Content-Type: application/json; charset=utf-8
+Response Body: {"id":8723415,"name":"apiautomation","email":"apiautomation_1795781427749@gmail.com","gender":"male","status":"active"}
+URL: https://gorest.co.in/public/v2/users/8723415
+Status: 200 Response: {
+  id: 8723415,
+  name: 'apiautomation-update',
+  email: 'apiautomation_1795781427749@gmail.com',
+  gender: 'male',
+  status: 'inactive'
+}
+Content-Type: application/json; charset=utf-8
+Response Body: {"id":8723415,"name":"apiautomation-update","email":"apiautomation_1795781427749@gmail.com","gender":"male","status":"inactive"}

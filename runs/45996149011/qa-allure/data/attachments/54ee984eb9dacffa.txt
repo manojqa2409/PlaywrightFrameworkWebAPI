@@ -1,0 +1,14 @@
+URL: https://gorest.co.in/public/v2/users/8723416
+Status: 200 Response: {
+  id: 8723416,
+  name: 'apiautomation',
+  email: 'apiautomation_1795781428753@gmail.com',
+  gender: 'male',
+  status: 'active'
+}
+Content-Type: application/json; charset=utf-8
+Response Body: {"id":8723416,"name":"apiautomation","email":"apiautomation_1795781428753@gmail.com","gender":"male","status":"active"}
+URL: https://gorest.co.in/public/v2/users/8723416
+Status: 404 Response: { message: 'Resource not found' }
+Content-Type: application/json; charset=utf-8
+Response Body: {"message":"Resource not found"}

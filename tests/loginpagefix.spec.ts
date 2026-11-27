@@ -28,10 +28,10 @@ test('@regression forgot pwd link exist test', async ({ loginPage }) => {
     expect(await loginPage.isForgottenPwdLinkExist()).toBeTruthy();
 });
 
-test('@regression user is able to login to app with valid credentials', async ({ loginPage, homePage, page }) => {
+test('@regression user is able to login to app with valid credentials', async ({ loginPage, homePage }) => {
 
     meta({ priority: 'P1', severity: 'blocker', owner: 'Manish', story: 'US102', epic: 'ep300', feature: 'F31', issue: 'bug35' });
-    await testData({ username: process.env.APP_USERNAME!, password: process.env.APP_PASSWORD! }, 'Login');
+    await testData({ username: process.env.USERNAME!, password: process.env.PASSWORD! }, 'Login');
 
     await allure.suite("Login Tests");
     await allure.severity("critical");
@@ -40,7 +40,7 @@ test('@regression user is able to login to app with valid credentials', async ({
     await allure.description("Verify user can login with valid credentials");
 
     await allure.step("Login with valid creds", async () => {
-        await loginPage.doLogin(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
+        await loginPage.doLogin(process.env.USERNAME!, process.env.PASSWORD!);
     });
 
     await allure.step("Verify logout link is visible", async () => {
@@ -48,8 +48,7 @@ test('@regression user is able to login to app with valid credentials', async ({
     });
 
     await allure.step("Verify logout home page title is visible", async () => {
-        // auto-retrying assertion: waits up to 10s for the title to become 'My Account'
-        await expect.soft(page).toHaveTitle('My Account', { timeout: 10000 });
+        expect.soft(await homePage.getHomePageTitle()).toBe('My Account');
     });
 
 });

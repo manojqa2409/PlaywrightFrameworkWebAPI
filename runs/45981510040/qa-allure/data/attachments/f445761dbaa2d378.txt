@@ -1,0 +1,3 @@
+Auth API Token:  { token: 'ee785ef268a038a' }
+token:  ee785ef268a038a
+Booking ID:  1851

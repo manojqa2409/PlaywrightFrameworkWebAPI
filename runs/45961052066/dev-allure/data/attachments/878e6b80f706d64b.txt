@@ -1,0 +1,11 @@
+created userid-POST: 8723303
+URL: https://gorest.co.in/public/v2/users/8723303
+Status: 200 Response: {
+  id: 8723303,
+  name: 'manoj',
+  email: 'manoj1795765795980@gmail.com',
+  gender: 'male',
+  status: 'active'
+}
+Content-Type: application/json; charset=utf-8
+Response Body: {"id":8723303,"name":"manoj","email":"manoj1795765795980@gmail.com","gender":"male","status":"active"}
